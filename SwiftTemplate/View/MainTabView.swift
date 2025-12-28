@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct MainTabView: View {
-    @State private var selectedTab = 0
+    
     @AppStorage("darkMode") private var darkMode = true
     @AppStorage("appLanguage") private var appLanguage = "en"
     
+    @State private var selectedTab = 0
+
     var body: some View {
         TabView(selection: $selectedTab) {
             
-            Tab(StringManager.shared.get("Home"), systemImage: "newspaper", value: 0) {
+            Tab(StringManager.shared.get("Home"), systemImage: "house", value: 0) {
                 IndexView()
             }
             

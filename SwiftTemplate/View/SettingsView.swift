@@ -14,10 +14,9 @@ struct SettingsView: View {
     
     /* @StateObject private var storeManager = StoreManager() */
     
-    @AppStorage("isDarkMode") private var isDarkMode = true
+    @AppStorage("darkMode") private var darkMode = true
     @AppStorage("appLanguage") private var appLanguage = "en"
     @AppStorage("iAP-ID") private var inAppUnlocked = false
-    @AppStorage("clipboardUnit") private var clipboardUnit = false
     
     @State private var showRestoreAlert = false
     @State private var showPurchaseSheet = false
@@ -37,12 +36,12 @@ struct SettingsView: View {
         Form {
             
             Section(header: Text(StringManager.shared.get("settings"))) {
-                Toggle(StringManager.shared.get("darkmode"), isOn: $isDarkMode)
+                Toggle(StringManager.shared.get("darkmode"), isOn: $darkMode)
                     .toggleStyle(SwitchToggleStyle(tint: .blue))
                 
                 Picker(StringManager.shared.get("language"), selection: $appLanguage) {
                     
-                    Text("🇬🇧 English").tag("en")       // Engelska
+                    Text("🇬🇧 English").tag("en")       // English
                     Text("🇸🇪 Svenska").tag("sv")       // Svenska
                     
                     }
@@ -50,7 +49,7 @@ struct SettingsView: View {
             }
             
             /*
-            // Köp-sektion
+            // Buy-section
             Section(header: Text(StringManager.shared.get("inAppUnlocked"))) {
                 if !inAppUnlocked {
                     Button(action: {
