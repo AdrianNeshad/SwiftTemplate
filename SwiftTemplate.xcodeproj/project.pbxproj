@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2AD4F7F72F01BE1E00898111 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = 2AD4F7F62F01BE1E00898111 /* AlertToast */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		2A8D57462F01BD3500B1D2A9 /* SwiftTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AD4F7F72F01BE1E00898111 /* AlertToast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = SwiftTemplate;
 			packageProductDependencies = (
+				2AD4F7F62F01BE1E00898111 /* AlertToast */,
 			);
 			productName = SwiftTemplate;
 			productReference = 2A8D57462F01BD3500B1D2A9 /* SwiftTemplate.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 2A8D573D2F01BD3500B1D2A9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2AD4F7F52F01BE1E00898111 /* XCRemoteSwiftPackageReference "AlertToast" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2A8D57472F01BD3500B1D2A9 /* Products */;
 			projectDirPath = "";
@@ -353,6 +362,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2AD4F7F52F01BE1E00898111 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2AD4F7F62F01BE1E00898111 /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2AD4F7F52F01BE1E00898111 /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2A8D573E2F01BD3500B1D2A9 /* Project object */;
 }
