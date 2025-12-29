@@ -18,7 +18,15 @@ struct IndexView: View {
                 Text("Hello World!")
                     .font(.title)
             }
+            .toolbar {
+                ToolbarItemGroup {
+                    NavigationLink(destination: FavoritesView()) {
+                        Image(systemName: "star")
+                    }
+                }
+            }
             .navigationTitle(StringManager.shared.get("home"))
+            .toolbarTitleDisplayMode(.inlineLarge)
             .preferredColorScheme(darkMode ? .dark : .light)
         }
     }

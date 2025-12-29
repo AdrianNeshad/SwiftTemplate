@@ -12,6 +12,8 @@ class StringManager {
     @AppStorage("appLanguage") var language: String = "en"
     
     private let en: [String: String] = [
+        "close": "Close",
+        "home": "Home",
         "feed": "Feed",
         "settings": "Settings",
         "language": "Language",
@@ -24,10 +26,17 @@ class StringManager {
         "givefeedback": "Give feedback",
         "otherapps": "Other apps",
         "search": "Search",
+        "ratetheapp": "Rate the App",
+        "sharetheapp": "Share the App",
+        "chooseappicon": "Choose App Icon",
+        "favorites": "Favorites",
+        "notaddedfavorites": "You haven't added any favorites yet",
         
     ]
 
     private let sv: [String: String] = [
+        "close": "Stäng",
+        "home": "Hem",
         "feed": "Flöde",
         "settings": "Inställningar",
         "language": "Språk",
@@ -40,7 +49,11 @@ class StringManager {
         "givefeedback": "Ge feedback",
         "otherapps": "Andra appar",
         "search": "Sök",
-        
+        "ratetheapp": "Betygsätt appen",
+        "sharetheapp": "Dela appen",
+        "chooseappicon": "Välj appikon",
+        "favorites": "Favoriter",
+        "notaddedfavorites": "Du har inte lagt till några favoriter än",
         
     ]
     
