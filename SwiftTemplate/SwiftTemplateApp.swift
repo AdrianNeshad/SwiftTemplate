@@ -15,6 +15,10 @@ struct SwiftTemplateApp: App {
     @AppStorage("appLanguage") private var appLanguage = "en"
     @AppStorage("hasLaunchedBefore") private var hasLaunchedBefore = false
     
+    init() {
+        MobileAds.shared.start()
+    }
+    
     var body: some Scene {
         WindowGroup {
             MainTabView()

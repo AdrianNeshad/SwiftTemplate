@@ -15,8 +15,13 @@ struct IndexView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                Text("Hello World!")
-                    .font(.title)
+                VStack {
+                    Text("Hello World!")
+                        .font(.title)
+                        // Test banner id: ca-app-pub-3940256099942544/2435281174
+                        // Riktigt ID: ca-app-pub-9539709997316775/1417576689
+                        LazyBannerAdView(adUnitID: "ca-app-pub-3940256099942544/2435281174")
+                }
             }
             .toolbar {
                 ToolbarItemGroup {
