@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A4714BF2F09418700B21CD4 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 2A4714BE2F09418700B21CD4 /* GoogleMobileAds */; };
 		2AD4F7F72F01BE1E00898111 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = 2AD4F7F62F01BE1E00898111 /* AlertToast */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A4714BF2F09418700B21CD4 /* GoogleMobileAds in Frameworks */,
 				2AD4F7F72F01BE1E00898111 /* AlertToast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +73,7 @@
 			name = SwiftTemplate;
 			packageProductDependencies = (
 				2AD4F7F62F01BE1E00898111 /* AlertToast */,
+				2A4714BE2F09418700B21CD4 /* GoogleMobileAds */,
 			);
 			productName = SwiftTemplate;
 			productReference = 2A8D57462F01BD3500B1D2A9 /* SwiftTemplate.app */;
@@ -102,6 +105,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				2AD4F7F52F01BE1E00898111 /* XCRemoteSwiftPackageReference "AlertToast" */,
+				2A4714BD2F09418700B21CD4 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2A8D57472F01BD3500B1D2A9 /* Products */;
@@ -278,6 +282,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.1;
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Adrian.SwiftTemplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -323,6 +328,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.1;
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Adrian.SwiftTemplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -364,6 +370,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		2A4714BD2F09418700B21CD4 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.14.0;
+			};
+		};
 		2AD4F7F52F01BE1E00898111 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/elai950/AlertToast";
@@ -375,6 +389,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2A4714BE2F09418700B21CD4 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A4714BD2F09418700B21CD4 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
 		2AD4F7F62F01BE1E00898111 /* AlertToast */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2AD4F7F52F01BE1E00898111 /* XCRemoteSwiftPackageReference "AlertToast" */;
